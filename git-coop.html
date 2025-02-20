@@ -16,24 +16,30 @@
 
     <style>
         body {
-    font-family: 'Poppins', sans-serif; /* Poppins als standaard lettertype */
+    font-family: 'Poppins', sans-serif; 
 }
         .portfolio-button {
     display: flex;
     align-items: center;
-    gap: 10px; /* Ruimte tussen de elementen */
-    color: black; /* Standaard tekstkleur */
+    gap: 10px; 
+    width: 160px;
+    color: black; 
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
-    position: relative;
-    padding: 10px 20px;
+    position: relative;    
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px; 
+    font-size: 0.9rem; 
 }
+
+
 
 .portfolio-button .circle {
     width: 10px;
     height: 10px;
-    background-color: #06f9b7; /* Standaard kleur */
+    background-color: #06f9b7; 
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.3s ease;
@@ -42,21 +48,32 @@
 .portfolio-button .line {
     width: 40px;
     height: 2px;
-    background-color: #06f9b7; /* Standaard kleur */
+    background-color: #06f9b7; 
     display: inline-block;
     transition: background-color 0.3s ease;
 }
 
 .portfolio-button:hover {
-    color: #06f9b7; /* Tekstkleur verandert bij hover */
+    color: #06f9b7; 
     border: 2px solid #06f9b7;
-    padding: 8px 18px; /* Kleinere padding door border */
+    padding: 8px 18px;
+
 }
 
 .portfolio-button:hover .circle,
 .portfolio-button:hover .line {
-    background-color: black; /* Wordt zwart bij hover */
+    background-color: black; 
 }
+
+.vertical-line {
+    position: absolute;
+    left: 10%; 
+    
+    width: 2px;
+    height: 40vh; 
+    background-color: #06f9b7;
+}
+
 
         
     </style>
@@ -68,8 +85,8 @@
 <body>
     <section class="container py-5">
         
-        <div class="container-sm w-85 mx-auto">
-            <h2 class="fw-bold text-start">
+        <div class="container-sm w-75 mx-auto">
+            <h2 class="fw-bold text-start display-3">
                 Our <span style="color: #06f9b7;">Services</span>
             </h2>
             
@@ -80,8 +97,9 @@
             </p>
     
           
-            <div class="row mt-5">
-                <div class="col-md-4">
+            <div class="row g-0 mt-3"> 
+
+                <div class="col-md-4 g-1">
                     <i class="fa-solid fa-cubes fa-2x pb-4"></i>
                     <h3 class="fw-bold text-start">UX.UI Design</h3>
                     <p class="text-start">Check out our <strong>dribble</strong> profile <br>for more. You can get more portfolio <br>sample here</p>
@@ -118,6 +136,9 @@
             </div>
         </div>
     </section>
+
+
+    <div class="vertical-line"></div>
     
     
 
