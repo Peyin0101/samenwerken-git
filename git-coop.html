@@ -4,19 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">  
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Git Samenwerken</title>
     <style>
-           body {
+    body {
     font-family: 'Poppins', sans-serif; 
 }
-.full-width-section {
+      
+    .full-width-section {
             background-color:#f8f6f7; 
             width: 100vw;
             position: relative;
@@ -24,12 +21,10 @@
             height: 120vh;
 }
 
-        .portfolio-button {
+    .portfolio-button {
     display: flex;
     align-items: center;
-
     box-sizing: border-box;
-
     gap: 10px; 
     width: 160px;
     color: black; 
@@ -41,38 +36,6 @@
     border-radius: 5px;
     padding: 5px 10px; 
     font-size: 0.9rem; 
-}
-
-
-
-.portfolio-button .circle {
-    width: 10px;
-    height: 10px;
-    background-color: #06f9b7; 
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.portfolio-button {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    gap: 10px;
-    width: 160px;
-    color: black;
-
-    gap: 10px; 
-    color: black; 
-
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 0.9rem;
 }
 
 .portfolio-button .circle {
@@ -91,37 +54,10 @@
     transform: translateX(-100%); 
     width: 50%; 
     height: 2px;
-
-    background-color: #06f9b7;
-
     background-color: #06f9b7; 
     display: inline-block;
-
     transition: background-color 0.3s ease;
 }
-
-
-.portfolio-button:hover {
-
-    color: #06f9b7;
-    border: 2px solid #06f9b7;
-    padding: 8px 18px;
-
-    color: #06f9b7; 
-    border: 2px solid #06f9b7;
-    padding: 8px 18px; 
-
-}
-
-.portfolio-button:hover .circle,
-.portfolio-button:hover .line {
-
-    background-color: black;
-
-    background-color: black; 
-
-}
-
 
 .portfolio-button:hover {
     color: #06f9b7; 
@@ -196,11 +132,6 @@
             align-items: center;
             font-size: 20px;
         }
-        body {
-            background-color: black;
-            height: 100%;
-            margin: 0;
-        }
 
         .header {
             min-height: 100%;
@@ -211,9 +142,8 @@
 
         .hamburger-menu {
             font-size: 1.8rem;
-            color: white;
             cursor: pointer;
-            margin-left: 20px;
+            margin-left: 50px;
         }
 
         .overlay {
@@ -231,11 +161,16 @@
             width: 100%;
             z-index: 10;
             background: transparent;
+            padding-right: 200px;
+        }
+
+        .nav-item {
+            margin-right: 37px;
         }
 
         .left-box,
         .right-box {
-            height: 300px;
+            height: 450px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -243,8 +178,9 @@
         }
 
         .left-box {
-            background: rgba(66, 68, 68, 0.736);
+            background: rgba(66, 68, 68, 0.7);
             text-align: right;
+            padding-right: 30px;
         }
 
         .right-box {
@@ -256,6 +192,7 @@
         .big-text {
             font-size: 4rem;
             font-weight: bold;
+            padding-bottom: 100px;
         }
 
         .we-are {
@@ -263,7 +200,8 @@
         }
 
         .creative {
-            color: black;
+            color: rgb(47, 48, 48);
+            padding-bottom: 140px;
         }
 
         .btn-portfolio {
@@ -298,7 +236,7 @@
         }
 
         .ux-ui {
-            font-size: 4rem;
+            font-size: 8rem;
             font-weight: bold;
             position: absolute;
             bottom: 40px;
@@ -312,7 +250,7 @@
 
         .about {
             background-color: white;
-            padding: 100px 20px;
+            padding: 200px;
             position: relative;
         }
 
@@ -330,19 +268,15 @@
             color: black;
         }
 
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+
         .about-text {
-            max-width: 800px;
-            margin: 0 auto 40px;
+            max-width: 1000px;
             font-size: 1.2rem;
-        }
-
-        .logo-container {
-            position: relative;
-            display: inline-block;
-        }
-
-        .logo {
-            width: 80px;
         }
 
         .green-stripe {
@@ -355,15 +289,9 @@
             transform: translateY(-50%);
         }
 
-        .logo-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .logo-text {
-            max-width: 250px;
-            margin: 0 auto;
+        .logoImgs {
+            display: flex;
+            justify-content: left;
         }
 
         .green-link {
@@ -374,24 +302,6 @@
 
         .green-link:hover {
             text-decoration: underline;
-        }
-
-        .be-logo {
-            font-size: 4rem;
-            font-weight: bold;
-            display: inline-block;
-            position: relative;
-        }
-
-        .be-b {
-            color: white;
-        }
-
-        .be-e {
-            position: absolute;
-            top: -10px;
-            left: 35px;
-            color: white;
         }
 
         .vertical-text {
@@ -409,35 +319,34 @@
 
 <body>
     <div class="header">
-        <div class="container overlay">
+        <div class="container-fluid overlay">
             <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand text-white fw-bold" href="#">Logo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-                            <li class="nav-item">
-                                <span class="hamburger-menu"><i class="fas fa-bars"></i></span>
-                            </li>
-                        </ul>
-                    </div>
+                <a class="navbar-brand text-white fw-bold" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><b>ABOUT US</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><b>SERVICES</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><b>PORTFOLIO</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><b>CONTACT</b></a></li>
+                        <li class="nav-item">
+                            <span class="hamburger-menu"><i class="fas fa-bars"></i></span>
+                        </li>
+                    </ul>
                 </div>
             </nav>
 
             <div class="row">
                 <div class="col-md-6 left-box">
                     <div class="big-text we-are">We are</div>
-                    <a href="#" class="btn-portfolio">
-                        Portfolio
-                        <span class="green-line"></span>
-                    </a>
+                    <div class="portfolio-button">
+                        <span class="circle"></span>
+                        <span class="text">Portfolio</span>
+                        <span class="line"></span>
+                    </div>
                 </div>
                 <div class="col-md-6 right-box position-relative">
                     <div class="big-text creative">Creative</div>
@@ -447,7 +356,7 @@
         </div>
     </div>
     <div class="about">
-        <div class="about container text-center">
+        <div class="about-container">
             <div class="about-title">
                 <span class="about-green">About</span>
                 <span class="about-black">Us</span>
@@ -459,49 +368,31 @@
                 organizations such as
                 web development and software development firms as well.
             </p>
-
-            <div class="row justify-content-center">
-                <div class="col-md-4 text-center">
-                    <div class="logo-container">
-                        <img src="dribbble-logo.png" alt="Dribbble Logo" class="logo">
-                        <div class="green-stripe"></div>
-                    </div>
-                    <h3 class="logo-title">Dribbble</h3>
-                    <p class="logo-text">
-                        Check out our <a href="#" class="green-link">Dribbble</a> profile for more. You can get more
-                        portfolio samples here.
-                    </p>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <div class="logo-container">
-                        <div class="be-logo">
-                            <span class="be-b">B</span><span class="be-e">Ē</span>
-                        </div>
-                        <div class="green-stripe"></div>
-                    </div>
-                    <h3 class="logo-title">Behance</h3>
-                    <p class="logo-text">
-                        Check out our <a href="#" class="green-link">Behance</a> profile for more. You can get more
-                        portfolio samples here.
-                    </p>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <div class="logo-container">
-                        <img src="uplabs-logo.png" alt="Uplabs Logo" class="logo">
-                        <div class="green-stripe"></div>
-                    </div>
-                    <h3 class="logo-title">Uplabs</h3>
-                    <p class="logo-text">
-                        Check out our <a href="#" class="green-link">Uplabs</a> profile for more. You can get more
-                        portfolio samples here.
-                    </p>
-                </div>
-            </div>
-
-            <div class="vertical-text">who we are & what we do</div>
         </div>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <img class="logoImgs" src="images/basketball.png" alt="basketball">
+                <h3 class="fw-bold text-start">dribbble</h3>
+                <p class="text-start">
+                    Check out our <a href="#" class="green-link">dribbble</a> profile for more. You can get more
+                    portfolio samples here.</p>
+            </div>
+            <div class="col-md-4">
+                <img class="logoImgs" src="images/be.png" alt="Be">
+                <h3 class="fw-bold text-start">behance</h3>
+                <p class="text-start">
+                    Check out our <a href="#" class="green-link">behance</a> profile for more. You can get more
+                    portfolio samples here.</p>
+            </div>
+            <div class="col-md-4">
+                <img class="logoImgs" src="images/cloud-up.png" alt="Cloud up">
+                <h3 class="fw-bold text-start">Uplabs</h3>
+                <p class="text-start">
+                    Check out our <a href="#" class="green-link">Uplabs</a> profile for more. You can get more
+                    portfolio samples here.</p>
+            </div>
+        </div>
+        <div class="vertical-text">who we are & what we do</div>
     </div>
    <section class="portfolio container py-5">
         <div class="col-md-6 text-start">
