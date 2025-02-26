@@ -5,66 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <title>Git Samenwerken</title>
     <style>
-        .portfolio h2 span {
-            color: #0ff3a8;
-            font-size: 60px;
-        }
-
-        span {
-            font-size: 60px;
-        }
-
-        .filter-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .portfolio-item {
-            position: relative;
-            height: 300px;
-            overflow: hidden;
-        }
-
-        .portfolio-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .item-label {
-            position: absolute;
-            left: 10px;
-            bottom: 10px;
-            background-color: #0ff3a8;
-            color: white;
-            padding: 5px 15px;
-            font-size: 14px;
-        }
-
-        .overlay-plus {
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
-            background-color: #0ff3a8;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
-        }
-        body {
-            background-color: black;
-            height: 100%;
-            margin: 0;
-        }
-
         .header {
             min-height: 100%;
             display: flex;
@@ -267,6 +212,347 @@
             color: white;
             font-weight: bold;
         }
+
+        .portfolio-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+            padding: 10px 20px;
+        }
+
+        .portfolio-button .circle {
+            width: 10px;
+            height: 10px;
+            background-color: #06f9b7;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .portfolio-button .line {
+            width: 40px;
+            height: 2px;
+            background-color: #06f9b7;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .portfolio-button:hover {
+            color: #06f9b7;
+            border: 2px solid #06f9b7;
+            padding: 8px 18px;
+        }
+
+        .portfolio-button:hover .circle,
+        .portfolio-button:hover .line {
+            background-color: black;
+        }
+
+        .portfolio {
+            background-color: white;
+            padding: 100px 20px;
+            color: black;
+        }
+
+        .portfolio-title {
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-green {
+            color: #06f9b7;
+        }
+
+        .portfolio-text {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 1.2rem;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: start;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .filter-buttons button {
+            background: transparent;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 0;
+            transition: color 0.3s ease;
+        }
+
+        .filter-buttons button:hover {
+            color: #06f9b7;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .full-width-section {
+            background-color: #f8f6f7;
+            width: 80vw;
+            position: relative;
+            left: 0;
+            height: 120vh;
+        }
+
+        .portfolio-button {
+            display: flex;
+            align-items: center;
+
+            box-sizing: border-box;
+
+            gap: 10px;
+            width: 160px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+        }
+
+
+
+        .portfolio-button .circle {
+            width: 10px;
+            height: 10px;
+            background-color: #06f9b7;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .portfolio-button {
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            gap: 10px;
+            width: 160px;
+            color: black;
+
+            gap: 10px;
+            color: black;
+
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+        }
+
+        .portfolio-button .circle {
+            width: 10px;
+            height: 10px;
+            background-color: #06f9b7;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .portfolio-button .line {
+            position: absolute;
+            top: 50%;
+            left: 120%;
+            transform: translateX(-100%);
+            width: 50%;
+            height: 2px;
+
+            background-color: #06f9b7;
+
+            background-color: #06f9b7;
+            display: inline-block;
+
+            transition: background-color 0.3s ease;
+        }
+
+
+        .portfolio-button:hover {
+
+            color: #06f9b7;
+            border: 2px solid #06f9b7;
+            padding: 8px 18px;
+
+            color: #06f9b7;
+            border: 2px solid #06f9b7;
+            padding: 8px 18px;
+
+        }
+
+        .portfolio-button:hover .circle,
+        .portfolio-button:hover .line {
+
+            background-color: black;
+
+            background-color: black;
+
+        }
+
+
+        .portfolio-button:hover {
+            color: #06f9b7;
+            border: 2px solid #06f9b7;
+            padding: 8px 18px;
+
+        }
+
+        .portfolio-button:hover .circle,
+        .portfolio-button:hover .line {
+            background-color: black;
+        }
+
+        .vertical-line {
+            position: absolute;
+            left: 10%;
+            bottom: -30vh;
+            width: 2px;
+            height: 40vh;
+            background-color: #06f9b7;
+            z-index: 2;
+        }
+
+        .contact {
+            background-color: white;
+            padding: 100px 20px;
+            color: #333;
+            text-align: center;
+            position: relative;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background: transparent;
+            border: none;
+            /* Geen border, alleen onderlijn */
+            border-bottom: 2px solid #06f9b7;
+            /* Groene onderlijn zoals in de afbeelding */
+            color: #333;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .contact-form button {
+            background: transparent;
+            border: 2px solid #06f9b7;
+            /* Groene border zoals in de afbeelding */
+            color: #333;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact-form button::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: #06f9b7;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .contact-form button::after {
+            content: "";
+            width: 40px;
+            height: 2px;
+            background: #06f9b7;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Footer sectie stijlen */
+        .footer {
+            background-color: white;
+            padding: 20px 0;
+            color: #333;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            color: #06f9b7;
+            text-decoration: underline;
+        }
+
+        .footer-social {
+            margin-top: 10px;
+        }
+
+        .footer-social i {
+            color: #06f9b7;
+            font-size: 1.2rem;
+            margin: 0 5px;
+        }
+
+        /* Verticale groene lijn rechts (zoals in de afbeelding) */
+        .vertical-line {
+            position: absolute;
+            right: 20px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #06f9b7;
+        }
     </style>
 </head>
 
@@ -366,72 +652,153 @@
             <div class="vertical-text">who we are & what we do</div>
         </div>
     </div>
-   <section class="portfolio container py-5">
-        <div class="col-md-6 text-start">
-            <div class="tekst">
-                <span class="groen">Portfolio</span>
-                <span class="zwart">World</span>
-            </div>
-            <p class="text-center">Graphic Design Services, Websites, businesses and brands are all much more than just
-                words and products
-                they're also images and art. Graphic design is an integral part of any business and
-                that's as true for your company's image and your marketing.
-            </p>
 
-            <div class="">
-                <button>All</button>
-                <button>Graphic design</button>
-                <button>Logo branding</button>
-                <button>UX/UI design</button>
-            </div>
-        </div>
+    <div class="full-width-section">
+        <section class="container py-5 ">
+
+            <div class="container-sm w-75 mx-auto">
+                <h2 class="fw-bold text-start display-3">
+                    Our <span style="color: #06f9b7;">Services</span>
+                </h2>
+
+                <p class="mt-3 text-start pb-5">
+                    Graphic Design Services. Websites, businesses and brands are all much more than just words and
+                    products. <br>
+                    They're also images and art. Graphic design is an integral part of any business and <br>
+                    that's as true for your company's image and your marketing.
+                </p>
 
 
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="portfolio-item">
-                    <img src="images/bag.jpg" alt="Shopping Bag">
+                <div class="row g-0 mt-3">
+
+                    <div class="col-md-4 g-1">
+                        <i class="fa-solid fa-cubes fa-2x pb-4"></i>
+                        <h3 class="fw-bold text-start">UX.UI Design</h3>
+                        <p class="text-start">Check out our <strong>dribble</strong> profile <br>for more. You can get
+                            more portfolio <br>sample here</p>
+                        <div class="portfolio-button">
+                            <span class="circle"></span>
+                            <span class="text">Portfolio</span>
+                            <span class="line"></span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-gear fa-2x pb-4" style="color: #06f9b7;"></i>
+
+                        <h3 class="fw-bold text-start">Graphic Design</h3>
+                        <p class="text-start">Check out our <strong>behance</strong> profile <br>for more. You can get
+                            more portfolio <br>sample here</p>
+                        <div class="portfolio-button">
+                            <span class="circle"></span>
+                            <span class="text">Portfolio</span>
+                            <span class="line"></span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa-regular fa-lightbulb fa-2x pb-4"></i>
+                        <h3 class="fw-bold text-start">Logo Branding</h3>
+                        <p class="text-start">Check out our <strong>dribble</strong> profile <br>for more. You can get
+                            more portfolio <br>sample here</p>
+                        <div class="portfolio-button">
+                            <span class="circle"></span>
+                            <span class="text">Portfolio</span>
+                            <span class="line"></span>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="portfolio-item">
+        </section>
+        <div class="vertical-line"></div>
+    </div>
+
+    <section class="portfolio container py-5">
+        <div class="row">
+            <div class="col-md-6 text-start">
+                <div class="portfolio-title">
+                    <span class="portfolio-green">Portfolio</span>
+                    <span style="color: black;">World</span>
+                </div>
+                <p class="portfolio-text">
+                    Graphic Design Services. Websites, businesses and brands are all much more than just words and
+                    products they're also images and art. Graphic design is an integral part of any business and that's
+                    as true for your company's image and your marketing.
+                </p>
+                <div class="filter-buttons">
+                    <button>All</button>
+                    <button>Graphic design</button>
+                    <button>Logo branding</button>
+                    <button>UX/UI design</button>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="graphic design">
+                    <img src="images/bag.jpg" alt="Shopping Bag">
+                </div>
+                <div class="portfolio-item" data-category="graphic design">
                     <img src="images/milk.jpg" alt="Milk Bottles">
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="logo branding">
                     <img src="images/package.jpg" alt="Paper Bag">
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="ux/ui design">
                     <img src="images/bonsai.jpg" alt="Plant">
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="graphic design">
                     <img src="images/kat.jpg" alt="White Cat">
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="logo branding">
                     <img src="images/package.jpg" alt="Paper Bag">
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="ux/ui design">
                     <img src="images/bag.jpg" alt="Shopping Bag">
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="graphic design">
                     <img src="images/kat.jpg" alt="White Cat">
                 </div>
             </div>
+    </section>
+    <section class="contact-dark py-5" style="background-color: #1a1a1a; color: white;">
+        <div class="container text-center">
+            <h2>Want to say hello?</h2>
+            <button class="btn btn-outline-light mt-3">CONTACT</button>
+            <p>You can reach us via email: support@domain.com</p>
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Nieuwe "Contact" sectie (wit, formulier) -->
+    <section class="contact">
+        <div class="container">
+            <form class="contact-form">
+                <input type="text" placeholder="Subject" class="form-control mb-2">
+                <input type="email" placeholder="Your Email here" class="form-control mb-2">
+                <textarea placeholder="Drop Message" class="form-control mb-2" rows="3"></textarea>
+                <button type="submit">SEND US</button>
+            </form>
+            <div class="vertical-line"></div> <!-- Verticale groene lijn rechts -->
+        </div>
+    </section>
+
+    <!-- Footer sectie (wit) -->
+    <footer class="footer">
+        <div class="container">
+            <p>All rights reserved © heloLilo 2018.</p>
+            <div>
+                <a href="#">FAQs</a> | <a href="#">Privacy Policy</a> | <a href="#">Services</a>
+            </div>
+            <div class="footer-social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
