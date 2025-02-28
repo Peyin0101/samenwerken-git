@@ -8,6 +8,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
@@ -19,15 +23,13 @@
     <style>
       body {
         font-family: "Poppins", sans-serif;
-        overflow-x: hidden;
       }
 
       .full-width-section {
         background-color: #f8f6f7;
-        width: 100vw;
         position: relative;
         left: 0;
-        height: 80vh;
+        padding: 50px 0;
       }
 
       .portfolio-button {
@@ -43,7 +45,7 @@
         position: relative;
         border: 2px solid black;
         border-radius: 5px;
-
+        padding: 10px;
         font-size: 0.9rem;
       }
 
@@ -81,8 +83,9 @@
       .vertical-line {
         position: absolute;
         left: 10%;
+        bottom: -30vh;
         width: 2px;
-        height: 30vh;
+        height: 40vh;
         background-color: #06f9b7;
         z-index: 2;
       }
@@ -106,6 +109,14 @@
         object-fit: cover;
       }
 
+      .top-portfolio {
+        position: relative;
+        border-color: white;
+        color: white;
+        padding: 10px;
+        left: 70%;
+      }
+
       .item-label {
         position: absolute;
         left: 10px;
@@ -116,32 +127,19 @@
         font-size: 14px;
       }
 
-      .overlay-plus {
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
-        background-color: #0ff3a8;
-        color: white;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-      }
-
       .header {
         min-height: 100%;
         display: flex;
         flex-direction: column;
         position: relative;
+        background-image: url("images/istockphoto-1440777561-612x612.jpg");
+        background-size: cover;
+        background-position: center;
       }
 
       .hamburger-menu {
         font-size: 1.8rem;
         cursor: pointer;
-        margin-left: 50px;
       }
 
       .overlay {
@@ -155,11 +153,11 @@
 
       .navbar {
         position: absolute;
+        padding-right: 200px;
         top: 0;
         width: 100%;
         z-index: 10;
         background: transparent;
-        padding-right: 200px;
       }
 
       .nav-item {
@@ -176,13 +174,13 @@
       }
 
       .left-box {
-        background: rgba(66, 68, 68, 0.7);
+        background: rgba(44, 46, 46, 0.85);
         text-align: right;
         padding-right: 30px;
       }
 
       .right-box {
-        background: rgba(6, 249, 183, 0.7);
+        background: rgba(12, 212, 159, 0.85);
         color: white;
         text-align: left;
       }
@@ -195,11 +193,12 @@
 
       .we-are {
         color: white;
+        padding-top: 20px;
       }
 
       .creative {
         color: rgb(47, 48, 48);
-        padding-bottom: 140px;
+        padding-bottom: 123px;
       }
 
       .green-line {
@@ -213,16 +212,50 @@
       }
 
       .ux-ui {
+        font-family: "Rowdies";
+        font-weight: 700;
         font-size: 8rem;
-        font-weight: bold;
         position: absolute;
-        bottom: 40px;
-        right: 40px;
+        bottom: -75px;
+        right: 150px;
         color: white;
       }
 
       .ux-ui .dot {
+        font-family: "Poppins";
         color: black;
+        font-size: 180px;
+      }
+
+      .about {
+        background-color: white;
+        padding: 200px;
+        position: relative;
+      }
+
+      .about-title {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .about-green {
+        color: #06f9b7;
+      }
+
+      .about-black {
+        color: black;
+      }
+
+      .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+      }
+
+      .about-text {
+        max-width: 1000px;
+        font-size: 1.2rem;
       }
 
       .green-stripe {
@@ -233,6 +266,10 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+      }
+
+      .logo-helali {
+        margin-left: 20%;
       }
 
       .logoImgs {
@@ -260,149 +297,6 @@
         color: white;
         font-weight: bold;
       }
-
-      .overlay-image {
-        background-image: url("your-image-path.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 400px;
-        position: relative;
-      }
-      .email-text {
-        font-size: 1.2rem;
-        margin-top: 15px;
-      }
-
-      .email-text a {
-        color: #06f9b7;
-        text-decoration: none;
-      }
-
-      .footer-section {
-        background-color: white;
-        padding: 50px 0;
-      }
-
-      .input-field {
-        border: none;
-        border-bottom: 2px solid #06f9b7;
-        padding: 10px 15px;
-        font-size: 1rem;
-        margin-bottom: 20px;
-        width: 100%;
-        outline: none;
-        transition: border-color 0.3s ease;
-      }
-
-      .input-field:focus {
-        border-color: #06f9b7;
-      }
-
-      .send-button {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        text-decoration: none;
-        cursor: pointer;
-        position: relative;
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 5px;
-        min-width: 150px;
-        padding: 5px 10px;
-        font-size: 0.9rem;
-        transition: all 0.3s ease;
-        margin-top: 20px;
-        width: 100%;
-        max-width: 150px;
-      }
-
-      .send-button .circle {
-        width: 10px;
-        height: 10px;
-        background-color: #06f9b7;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.3s ease;
-      }
-
-      .send-button .line {
-        position: absolute;
-        top: 50%;
-        left: 120%;
-        transform: translateX(-100%);
-        width: 50%;
-        height: 2px;
-        background-color: #06f9b7;
-        display: inline-block;
-        transition: background-color 0.3s ease;
-      }
-
-      .send-button:hover {
-        color: #06f9b7;
-        border: 2px solid #06f9b7;
-      }
-
-      .send-button:hover .circle,
-      .send-button:hover .line {
-        background-color: black;
-      }
-
-      .footer-links {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-        font-size: 0.9rem;
-      }
-
-      .footer-links a {
-        text-decoration: none;
-        color: black;
-        transition: color 0.3s ease;
-      }
-
-      .footer-links a:hover {
-        color: #06f9b7;
-      }
-
-      .footer-text {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 0.9rem;
-      }
-
-      .footer-text span {
-        color: #06f9b7;
-      }
-
-      .form-container {
-        display: flex;
-        justify-content: center;
-        font-weight: bold;
-        padding-top: 150px;
-      }
-
-      .form-container .col-12 {
-        max-width: 300px;
-      }
-      .overlay-footer {
-            background-color: rgba(0, 0, 0, 0.6);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            height: 60vh;
-        }
     </style>
   </head>
 
@@ -410,7 +304,7 @@
     <div class="header">
       <div class="container-fluid overlay">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand text-white fw-bold" href="#">Logo</a>
+          <img class="logo-helali" src="images/logo-top.png" alt="" />
           <button
             class="navbar-toggler"
             type="button"
@@ -449,7 +343,7 @@
         <div class="row">
           <div class="col-md-6 left-box">
             <div class="big-text we-are">We are</div>
-            <div class="portfolio-button">
+            <div class="portfolio-button top-portfolio">
               <span class="circle"></span>
               <span class="text">Portfolio</span>
               <span class="line"></span>
@@ -462,61 +356,53 @@
         </div>
       </div>
     </div>
-    <div class="about-us-section">
-      <section class="container py-5">
-        <h2 class="fw-bold text-start display-3 mt-5">
-          About <span style="color: #06f9b7">Us</span>
-        </h2>
-        <p class="mt-3 text-start pb-5">
+    <div class="about container py-5">
+      <div class="about-container">
+        <div class="about-title">
+          <span class="about-green">About</span>
+          <span class="about-black">Us</span>
+        </div>
+        <p class="about-text">
           A <strong>creative</strong> director is a position often found within
           the graphic design, film, music, video game, fashion, advertising,
           media, or entertainment industries but may be useful in other creative
           organizations such as web development and software development firms
           as well.
         </p>
-        <div class="row g-0 mt-3">
-          <div class="col-md-4 g-1">
-            <img
-              class="logoImgs"
-              src="images/basketball.png"
-              alt="basketball"
-            />
-            <h3 class="fw-bold text-start">dribbble</h3>
-            <p class="text-start">
-              Check out our <a href="#" class="green-link">dribbble</a> profile
-              <br />
-              for more. You can get more portfolio <br />
-              samples here.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <img class="logoImgs" src="images/be.png" alt="Be" />
-            <h3 class="fw-bold text-start">behance</h3>
-            <p class="text-start">
-              Check out our <a href="#" class="green-link">behance</a> profile
-              <br />
-              for more. You can get more portfolio <br />
-              samples here.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <img class="logoImgs" src="images/cloud-up.png" alt="Cloud up" />
-            <h3 class="fw-bold text-start">Uplabs</h3>
-            <p class="text-start">
-              Check out our <a href="#" class="green-link">Uplabs</a> profile
-              <br />
-              for more. You can get more portfolio <br />
-              samples here.
-            </p>
-          </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <img class="logoImgs" src="images/basketball.png" alt="basketball" />
+          <h3 class="fw-bold text-start">dribbble</h3>
+          <p class="text-start">
+            Check out our <a href="#" class="green-link">dribbble</a> profile
+            for more. You can get more portfolio samples here.
+          </p>
         </div>
-      </section>
+        <div class="col-md-4">
+          <img class="logoImgs" src="images/be.png" alt="Be" />
+          <h3 class="fw-bold text-start">behance</h3>
+          <p class="text-start">
+            Check out our <a href="#" class="green-link">behance</a> profile for
+            more. You can get more portfolio samples here.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="logoImgs" src="images/cloud-up.png" alt="Cloud up" />
+          <h3 class="fw-bold text-start">Uplabs</h3>
+          <p class="text-start">
+            Check out our <a href="#" class="green-link">Uplabs</a> profile for
+            more. You can get more portfolio samples here.
+          </p>
+        </div>
+      </div>
+      <div class="vertical-text">who we are & what we do</div>
     </div>
 
     <div class="full-width-section">
       <section class="container py-5">
-        <div class="container-sm mt-5">
-          <h2 class="fw-bold text-start display-3 mt-5">
+        <div class="container-sm w-75 mx-auto">
+          <h2 class="fw-bold text-start display-3">
             Our <span style="color: #06f9b7">Services</span>
           </h2>
 
@@ -575,13 +461,11 @@
       <div class="vertical-line"></div>
     </div>
     <section class="portfolio container py-5">
-      <div class="container-sm">
+      <div class="container-sm w-75 mx-auto">
         <div class="tekst">
-          <h2 class="fw-bold text-start display-3">
-            <span style="color: #06f9b7">Portfolio</span>World
-          </h2>
+          <h2><span style="color: #06f9b7">Portfolio</span>World</h2>
         </div>
-        <p class="text-start">
+        <p class="text-center">
           Graphic Design Services, Websites, businesses and brands are all much
           more than just words and products they're also images and art. Graphic
           design is an integral part of any business and that's as true for your
@@ -639,52 +523,6 @@
         </div>
       </div>
     </div>
-    <div class="footer-section container-fluid py-5">
-        <div class="row align-items-center">
-            <div class="col-12 position-relative">
-                <div class="overlay-image">
-                    <div class="overlay-footer">
-                        <h2>Want to say <span style="color: #06f9b7;">Hello?</span></h2>
-                        <a href="mailto:support@domain.com" class="portfolio-button">
-                            <span class="circle"></span>
-                            <span class="text">Contact</span>
-                            <span class="line"></span>
-                        </a>
-                        <p class="email-text">You can reach us via email: <a href="mailto:support@domain.com" style="color: #06f9b7;">support@domain.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-   
-    <div class="form-container">
-        <div class="col-12">
-            <form>
-                <input type="text" class="input-field" placeholder="Subject">
-                <input type="email" class="input-field" placeholder="Your email here">
-                <textarea class="input-field" placeholder="Drop your message"></textarea>
-                <a href="mailto:support@domain.com" class="send-button">
-                    <span class="circle"></span>
-                    <span class="text">Send Us</span>
-                    <span class="line"></span>
-                </a>
-            </form>
-        </div>
-    </div>
-
-    
-    <div class="footer-links">
-        <a href="#">FAQs</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Services</a>
-    </div>
-
-    
-    <div class="footer-text">
-        <p>All rights reserved by <span>helali.com</span> 2018</p>
-    </div>
-</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
