@@ -17,7 +17,6 @@
             padding: 0;
         }
 
-
         .overlay-image {
             background-image: url('your-image-path.jpg');
             background-size: cover;
@@ -28,7 +27,7 @@
         }
 
         .overlay {
-            background-color: rgba(0, 0, 0, 0.6); 
+            background-color: rgba(0, 0, 0, 0.6);
             position: absolute;
             top: 0;
             left: 0;
@@ -49,7 +48,6 @@
             margin-bottom: 20px;
         }
 
-        
         .portfolio-button {
             display: flex;
             align-items: center;
@@ -91,7 +89,6 @@
         .portfolio-button:hover {
             color: #06f9b7;
             border: 2px solid #06f9b7;
-           
         }
 
         .portfolio-button:hover .circle,
@@ -108,13 +105,121 @@
             color: #06f9b7;
             text-decoration: none;
         }
+
+        .footer-section {
+            background-color: white;
+            padding: 50px 0;
+        }
+
+        .input-field {
+            border: none;
+            border-bottom: 2px solid #06f9b7;
+            padding: 10px 15px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            width: 100%;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #06f9b7;
+        }
+
+        .send-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            min-width: 150px;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 150px; 
+        }
+
+        .send-button .circle {
+            width: 10px;
+            height: 10px;
+            background-color: #06f9b7;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .send-button .line {
+            position: absolute;
+            top: 50%;
+            left: 120%;
+            transform: translateX(-100%);
+            width: 50%;
+            height: 2px;
+            background-color: #06f9b7;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .send-button:hover {
+            color: #06f9b7;
+            border: 2px solid #06f9b7;
+        }
+
+        .send-button:hover .circle,
+        .send-button:hover .line {
+            background-color: black;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #06f9b7;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-text span {
+            color: #06f9b7;
+        }
+
+      
+        .form-container {
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .form-container .col-12 {
+            max-width: 300px;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <!-- Footer Section -->
     <div class="footer-section container-fluid py-5">
         <div class="row align-items-center">
             <div class="col-12 position-relative">
@@ -132,6 +237,35 @@
             </div>
         </div>
     </div>
+
+   
+    <div class="form-container">
+        <div class="col-12">
+            <form>
+                <input type="text" class="input-field" placeholder="Subject">
+                <input type="email" class="input-field" placeholder="Your email here">
+                <textarea class="input-field" placeholder="Drop your message"></textarea>
+                <a href="mailto:support@domain.com" class="send-button">
+                    <span class="circle"></span>
+                    <span class="text">Send Us</span>
+                    <span class="line"></span>
+                </a>
+            </form>
+        </div>
+    </div>
+
+    
+    <div class="footer-links">
+        <a href="#">FAQs</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Services</a>
+    </div>
+
+    
+    <div class="footer-text">
+        <p>All rights reserved by <span>helali.com</span> 2018</p>
+    </div>
+</div>
 
 </body>
 
